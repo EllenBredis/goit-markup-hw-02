@@ -1,0 +1,126 @@
+/* Главные стили сайта */
+
+/* цвет основного текста  #212121*/
+/* цвет вторичного текста  #757575*/
+/* цвет акцента #2196F3 */
+/* черный #000000 */
+/* белый #FFFFFF */
+/* для адреса rgba(255, 255, 255, 0.6) */
+/* вторичный цвет фона #F5F4FA */
+/* цвет футера #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-coor: #757575;
+  --accent-color: #2196f3;
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --secondary-bg-color: #f5f4fa;
+  
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--secondary-color);
+}
+.logo-title {
+  color: var(--accent-color);
+}
+
+/* Стили для header */
+.logo {
+  color: var(--secondary-color);
+}
+
+.logo-title {
+  color: var(--accent-color);
+}
+
+.header-link {
+  color: var(--primary-text-color);
+}
+
+.header-link-current {
+  color: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-email {
+  color: var(--primary-text-color);
+}
+
+.header-email:hover,
+.header-email:focus {
+  color: var(--accent-color);
+}
+
+.header-phone {
+  color: var(--primary-text-color);
+}
+
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--accent-color);
+}
+
+/* Стили для Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--main-color);
+}
+
+.hero-btn {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+/* стили для преимуществ */
+.feature-desc {
+  color: var(--secondary-text-coor);
+}
+
+/* стили для команды */
+.team-desc {
+  color: var(--secondary-text-coor);
+}
+
+/* Стили для footer */
+.footer {
+  background-color: #2f303a;
+}
+.footer-list {
+  font-style: normal;
+}
+
+.footer-logo {
+  color: var(--main-color);
+}
+.logo-title {
+  color: var(--accent-color);
+}
+
+.footer-link {
+  color: var(--main-color);
+}
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Стили для portfolio */
