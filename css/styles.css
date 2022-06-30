@@ -21,23 +21,25 @@
 }
 
 body {
-  background-color: var(--main-color);
   color: var(--primary-text-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* reset styles */
 .list {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
+/* Стили для 1 страницы сайта index.html */
+
 /* logo */
 .logo {
   color: var(--secondary-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -57,12 +59,12 @@ a {
   letter-spacing: 0.02em;
 }
 
-.header-link-current {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link-current {
   color: var(--accent-color);
 }
 
@@ -104,16 +106,14 @@ a {
 
 .hero-btn {
   color: var(--main-color);
-  background-color: var(--accent-color);
   font-family: inherit;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  /* display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em; */
+  letter-spacing: 0.06em;
 }
 
 /* стили для преимуществ */
@@ -127,14 +127,14 @@ a {
 
 .feature-desc {
   color: var(--secondary-text-coor);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
 }
 
 /* Стили для Чем мы занимаемся */
-.about-title {
+.about-title,
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -143,13 +143,7 @@ a {
 }
 
 /* стили для команды */
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+/* Стили для team-title такие же как и для about-titlе */
 
 .team-subtitle {
   font-weight: 500;
@@ -161,7 +155,6 @@ a {
 
 .team-desc {
   color: var(--secondary-text-coor);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -175,7 +168,7 @@ a {
 
 .footer-logo {
   color: var(--main-color);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -191,7 +184,6 @@ a {
 
 .footer-link {
   color: var(--main-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -199,15 +191,52 @@ a {
 .footer-mail,
 .footer-phone {
   color: var(--address-text-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.72;
   letter-spacing: 0.03em;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
+  color: var(--accent-color);
 }
 
 /* Стили для portfolio */
 /* Heder и  footer такие же как и на главной странице */
 
+.portfolio-btn {
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .portfolio-desc {
   color: var(--secondary-text-coor);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
