@@ -64,7 +64,7 @@ body {
   color: var(--accent-color);
 }
 
-.header-link-current {
+.current {
   color: var(--accent-color);
 }
 
